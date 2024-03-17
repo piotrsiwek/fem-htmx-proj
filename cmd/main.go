@@ -14,7 +14,7 @@ type Templates struct {
 
 func newTemplate() *Templates {
 	return &Templates{
-		templates: template.Must(template.ParseGlob("views//*.html")),
+		templates: template.Must(template.ParseGlob(".\\views\\*")),
 	}
 }
 
